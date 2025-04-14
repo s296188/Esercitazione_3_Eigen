@@ -41,6 +41,7 @@ int main()
 		Matrix2d A = A_matrix[i];
 		Vector2d b = b_vector[i];
 		
+		cout << "\n";
 		cout << "Sistema " << i+1 << endl;
 		
 		// PALU
@@ -56,10 +57,9 @@ int main()
 		cout << "Soluzione (QR): x = " << x_qr.transpose() << endl;
 		cout << "Errore relativo (QR): err = " << errRel(x_qr, x_ex) << endl;
 		
-		
-		cout << "\n";
-		
 	}
+	
+	cout << "\n";
 	
 	return 0;
 }
